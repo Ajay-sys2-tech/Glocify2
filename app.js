@@ -16,6 +16,7 @@ const user = require("./models/user");
 const auth = require("./middlewares/auth");
 
 
+
 const port = process.env.PORT || 3000;
 
 const static_path = path.join(__dirname, "/public");
@@ -69,6 +70,9 @@ app.use("/shops", shopRoutes);
 
 const cartRoutes = require("./routes/cart");
 app.use("/cart", cartRoutes);
+
+const paymentRoutes = require("./routes/payment");
+app.use("/payment", paymentRoutes);
 
 app.get("*", (req, res) =>  {
     res.render("error");
