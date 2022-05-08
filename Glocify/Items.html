@@ -1,0 +1,185 @@
+<!--==============================Display All Products ===============================-->
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Glocify - All Products</title>
+        <link rel="stylesheet" href="glocify.css">
+    </head>
+
+    <!-----=================================HEADER SECTION HAI YE =====================-->
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="logo3.PNG">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Sell Online</a></li>
+                        <li><a href="#">Review</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--===========================================All Products Featured section====================-->
+
+        <div class="small-container">
+            <h2 class="title-position">Featured Products</h2>
+            <div class="row">
+        
+                <div class="col-4">
+                   <img src="product9.jpg">
+                   <h4>Brown shirt</h4>
+                   <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+        
+        
+                    </div>
+                    <p>Rs. 1200</p>
+                </div>
+        
+        
+                <div class="col-4">
+                    <img src="product9.jpg">
+                    <h4>RED T-shirt</h4>
+        
+                    <div class="rating">
+                     <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                     </div>
+        
+                     <p>Rs. 700</p>
+                 </div>
+        
+        
+                 <div class="col-4">
+                    <img src="product9.jpg">
+                    <h4>Headphone</h4>
+        
+                    <div class="rating">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                     </div>
+        
+                     <p>Rs. 1900</p>
+                 </div>
+                  
+        
+                 <div class="col-4">
+                    <img src="product9.jpg">
+                    <h4>Skirt</h4>
+        
+                    <div class="rating">
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                     </div>
+        
+                     <p>Rs. 1300</p>
+                 </div>
+            </div>
+          </div>
+        
+
+        <!------------------------------------------------FOOTER SECTION YAHA SE SURU HAI----------------------->
+
+        <footer>
+            <div class="footer">
+                <div class="Container-foot">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Glocify</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Affiliate program</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get Help</h4>
+                            <ul>
+                                <li><a href="#">FAQ </a></li>
+                                <li><a href="#">Shipping </a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Orders</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Online Shop</h4>
+                            <ul>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Dresses</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Chat bot</a></li>
+                            </ul>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        </footer> 
+
+        <!-------------------------------------JAVA SCRIPT SECTION YAHA LAST ME-->
+
+
+        <!-----------------------------------------JS SECTION FOR LOGIN-FORM-->
+
+        <script>
+            var Loginform = document.getElementById("Loginform");
+            var regform = document.getElementById("regform");
+            var indicator = document.getElementById("indicator");
+
+            function register(){
+                regform.style.transform ="translateX(0px)";
+                Loginform.style.transform ="translateX(0px)";
+                indicator.style.transform ="translateX(100px)";
+            }
+
+            function login(){
+                regform.style.transform ="translateX(300px)";
+                Loginform.style.transform ="translateX(300px)";
+                indicator.style.transform ="translateX(0px)";
+            }
+
+        </script>
+        
+    </body>
+</html>
+
+

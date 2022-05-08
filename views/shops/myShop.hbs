@@ -1,0 +1,129 @@
+
+<!--===========================//  Display All Products for vendor //===============================-->
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Glocify - Product Portfolio Display</title>
+        <link rel="stylesheet" href="/css/myShop.css">
+        <link rel="stylesheet" href="/css/index.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        
+
+    </head>
+
+    <!-----==========================//  HEADER SECTION HAI YE  //=====================-->
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="../images/frontend/Glocify1.png">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/"> <i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="#">My shop</a></li>
+                        <li><a href="#">orders</a></li>
+                        <li><a href="#">Review</a></ li>
+                        <li><a href="#"><i class="fa fa-fw fa-user"></i>{{myShop.ownerName}}</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </div>
+
+        <!--===========================//  Vendor portfolio  //====================-->
+
+        <div class="wrap cf">
+            <h1 class="projTitle">Welcome Back to<span></span> {{myShop.name}}</h1>
+            <div class="heading cf">
+              <h15>My Products</h15>
+              <div class="jem">
+                <a href={{url}} class="continue">Add More Product</a>
+              </div> 
+            </div>
+
+            <div class="project-shopcart">
+                <div class="myshop">
+                    {{#each myProducts}}
+                    <div class="box-1">
+                        <img src={{this.image}} alt={{this.name}}>
+                        <div class="content-shop">
+                            <h16>{{this.name}}</h16>
+                            <h17>{{this.desc}}</h17>
+                            <h18>Price: Rs. {{this.price}}</h18>:</h18>
+                            <p15 class="shop-unit">Stock: <input value="3"> </p15>
+                            <p15 class="remove-btn">
+                                <i class="fa fa-trash"></i>
+                                <span class="remove-btn2">Remove</span>
+                            </p15>
+                            <p17 class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                                <span class="remove-btn2">Edit</span>
+                            </p17>
+                        </div>
+                    </div>
+                    {{/each}}
+                    <div class="box-1"> 
+                        <img src="../images/frontend/product1.jpg" alt="">
+                        <div class="content-shop">
+                            <h16>Product Name</h16>
+                            <h17>Short description</h17>
+                            <h18>Price:</h18>
+                            <p15 class="shop-unit">Stock: <input value="3"> </p15>
+                            <p15 class="remove-btn">
+                                <i class="fa fa-trash"></i>
+                                <span class="remove-btn2">Remove</span>
+                            </p15>
+                            <p17 class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                                <span class="remove-btn2">Edit</span>
+                            </p17>
+                        </div>
+                    </div>
+
+                    <div class="box-1">
+                        <img src="../images/frontend/product1.jpg" alt="">
+                        <div class="content-shop">
+                            <h16>Product Name</h16>
+                            <h17>Short description</h17>
+                            <h18>Price:</h18>
+                            <p15 class="shop-unit">Stock: <input value="3"> </p15>
+                            <p15 class="remove-btn">
+                                <i class="fa fa-trash"></i>
+                                <span class="remove-btn2">Remove</span>
+                            </p15>
+                            <p17 class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                                <span class="remove-btn2">Edit</span>
+                            </p17>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="heading cf">
+                <h15>End Of List</h15>                               
+            </div>
+            <div class="wrap cf"></div>
+        </div>
+        <div class="back-shop">
+            <a href="#"> Back</a>
+        </div> 
+
+
+        <!---==================// FOOTER SECTION YAHA SE SURU HAI  //===============--->
+
+        {{>footer}}   
+    </body>
+</html>
+
+

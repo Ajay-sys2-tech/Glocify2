@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Glocify Login</title>
+        <link rel="icon" type="image/x-icon" href="/images/frontend/favicon.ico">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    </head>
+
+    <!-------------------------------------------HEADER SECTION HAI YE ----------->
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="../images/frontend/Glocify1.png">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/"><i class="fa fa-home"></i> Home </a> </li>
+                        <li><a href="/user/display">Category</a></li>
+                        <li><a href="/shops/register">Sell Online</a></li>
+                        <li><a href="/user/register">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>      
+
+        <!--------------------------------------------LOGIN PAGE SECTION  ------------------->
+
+        <div class="account-page"> 
+            <div class="container">
+               
+                 <div class="row">
+                     <div class="col-6">
+                        <p> The best deals are just <br>one click away!!</p>
+                         <img src="../images/frontend/Login3.png">  
+                         
+                          
+                     </div>
+                   
+
+                     <div class="col-6">
+                          {{#if message}}
+                            <div class="alert alert-success">{{message}}</div>
+                         {{/if}}
+                         <div class="form-container-login">
+                             <div class="form-btn">
+                                 <span onclick="login()">Login</span>
+    
+                                </div>
+                             <!--------------------------------------LOGIN FORM-------------->
+                              <form id="regform" action="/user/login" method="POST">
+                                <input type="email" placeholder="Email" name="email">
+                                <input type="password" placeholder=" Enter Password" name="password"> 
+                                <button type="Submit" class="btn">Login</button>
+                                <span class="psw"><a href="#">Forgot&nbsp;Password?</a></span><br>
+                                <span class="psw1"><a href="/user/register">New&nbsp;here?&nbsp;Register&nbsp;Now</a></span>
+                              </form>
+                            </div>
+                     </div>
+                 </div>
+            </div> 
+        </div>
+
+        <!---------FOOTER SECTION YAHA SE SURU HAI------------>
+
+        {{>footer}}
+
+        
+        <!--------------------------JAVA SCRIPT SECTION YAHA LAST ME-->
+
+
+        <!-----------------------JS SECTION FOR LOGIN-FORM-->
+
+        <script>
+            var Loginform = document.getElementById("Loginform");
+            var regform = document.getElementById("regform");
+            var indicator = document.getElementById("indicator");
+
+            function register(){
+                regform.style.transform ="translateX(0px)";
+                Loginform.style.transform ="translateX(0px)";
+                indicator.style.transform ="translateX(100px)";
+            }
+
+            function login(){
+                regform.style.transform ="translateX(300px)";
+                Loginform.style.transform ="translateX(300px)";
+                indicator.style.transform ="translateX(0px)";
+            }
+
+        </script>
+        
+    </body>
+</html>

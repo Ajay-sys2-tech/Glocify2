@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+
+}
+
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url(../shop.jpg);
+    height: 40vh;
+    background-size:cover ;
+    background-position: center;
+}
+
+ul{
+    float:left;
+    list-style-type:none;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+ul li{
+    display:inline-block;
+}
+ul li a{
+    text-decoration:double;
+    color: #000 ;
+    padding: 3px 25px;                     
+    border: 3px solid #000;
+}
+
+ul li a:hover{
+    background-color: rgb(212, 13, 13);
+    color: white;
+    transition: 0.6s ease;
+}
+.logo img{
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+.title{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: rgb(76, 214, 12);
+    font-size: 70px;
+    
+}
+
+/*--------------------------------------- footer*-------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: black;
+    padding: 70px 0;
+    display: inline-block;
+    height: 60vh;
+}
+.footer-col{
+width:25%;
+padding: 0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #bbbbbb;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+.footer-col h4::before{
+    content:'';
+    position:absolute;
+    left:50px;
+    bottom: -10px;
+    background-color: #000000;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize
+;
+color: #bbbbbb;
+display: block;
+}

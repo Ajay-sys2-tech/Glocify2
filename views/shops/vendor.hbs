@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vendor Front</title>
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    </head>
+
+    <!-------------------------------------------HEADER SECTION HAI YE ----------->
+
+    <body>
+        <div class="container">                      <!--  "Name:- Container-head"    -->
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="../images/frontend/Glocify1.png">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-fw fa-user"></i>Home</a></li>
+                        <li><a href="#">My Shop</a></li>
+                        <li><a href="#">Add Products</a></li>
+                        <li><a href="#">Review</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>      
+
+        <!--------------------------------------------Vendor product visible SECTION  ------------------->
+
+        <div class="account-page">
+            <div class="container">
+                 <div class="row">
+                     <div class="col-6">
+                        <p> The best deals are just<br> one click away!!</p>
+                         <img src="../images/frontend/Login3.png">  
+                         
+                          
+                     </div>
+
+                     <div class="col-6">
+                         <div class="form-container">
+                             <div class="form-btn">
+                                 <span onclick="register()">Register</span> 
+                                 
+                             </div>
+                             
+                             <!--------------------------------------Registration FORM-------------->
+
+                              <form id="regform">
+                                <input type="text" placeholder="Enter Shop Name">
+                                <input type="text" placeholder="Enter Owner Name">
+                                <input type="email" placeholder="PAN/ GST Number">
+                                <input type="email" placeholder="Email/Phone Number">
+                                <input type="password" placeholder=" Select Password">
+                                <input type="password2" placeholder=" Re-enter your Selected Password">
+                                {{!-- <input type="checkbox" width="1px" height="0.1px" value="Register as vendor"> 
+                                <a>Register as vendor account</a> --}}
+                                <button type="Submit" class="btn">Create your shop</button>
+                              </form>
+                            </div>
+                     </div>
+                 </div>
+            </div> 
+        </div>
+
+
+        <!------------------------------------------------FOOTER SECTION YAHA SE SURU HAI----------------------->
+
+        {{>footer}}
+
+        <!-------------------------------------JAVA SCRIPT SECTION YAHA LAST ME-->
+
+
+        <!-----------------------------------------JS SECTION FOR LOGIN-FORM-->
+
+        <script>
+            var Loginform = document.getElementById("Loginform");
+            var regform = document.getElementById("regform");
+            var indicator = document.getElementById("indicator");
+
+            function register(){
+                regform.style.transform ="translateX(0px)";
+                Loginform.style.transform ="translateX(0px)";
+                indicator.style.transform ="translateX(100px)";
+            }
+
+            function login(){
+                regform.style.transform ="translateX(300px)";
+                Loginform.style.transform ="translateX(300px)";
+                indicator.style.transform ="translateX(0px)";
+            }
+
+        </script>
+        
+    </body>
+</html>
+
+

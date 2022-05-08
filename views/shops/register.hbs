@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Glocify Register</title>
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    </head>
+
+    <!-------------------------------------------HEADER SECTION HAI YE ----------->
+
+    <body>
+        <div class="container">                      <!--  "Name:- Container-head"    -->
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="../images/frontend/Glocify1.png">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Sell Online</a></li>
+                        <li><a href="#">Review</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>      
+
+        <!--------------------------------------------REGISTER PAGE SECTION  ------------------->
+
+        <div class="account-page">
+            <div class="container">
+                 <div class="row">
+                     <div class="col-6">
+                        <p> The best deals are just<br> one click away!!</p>
+                         <img src="../images/frontend/Login3.png">  
+                         
+                          
+                     </div>
+
+                     <div class="col-6">
+                         <div class="form-container">
+                             <div class="form-btn">
+                                 <span onclick="register()">Register</span>                                 
+                             </div>                             
+                             <!--------------------------------------Registration FORM-------------->
+                              <form id="regform" action="/shops/register" method="POST" enctype="multipart/form-data">
+                                <input type="text" placeholder="Enter Shop Name" name="name">
+                                <input type="text" placeholder="Enter Owner Name" name="ownerName">
+                                <input type="text" placeholder="Category of your shop" name="category">
+                                <input type="text" placeholder="PAN/ GST Number" name="panCard">
+                                <input type="email" placeholder="Email" name="email">
+                                <input type="password" placeholder=" Select Password" name="password1">
+                                <input type="password2" placeholder=" Re-enter your Selected Password" name="password2">
+                                <input type="file" name="catalog">
+                                {{!-- <input type="checkbox" width="1px" height="0.1px" value="Register as vendor"> 
+                                <a>Register as vendor account</a> --}}
+
+                                <button type="Submit" class="btn">Create your shop</button>
+                                <span class="psw1"><a href="/shops/login">Have&nbsp;account?&nbsp;Login&nbsp;Now</a></span>
+                              </form>
+                            </div>
+                     </div>
+                 </div>
+            </div> 
+        </div>
+
+
+        <!------------------------------------------------FOOTER SECTION YAHA SE SURU HAI----------------------->
+
+        {{>footer}}
+
+        <!-------------------------------------JAVA SCRIPT SECTION YAHA LAST ME-->
+
+
+        <!-----------------------------------------JS SECTION FOR LOGIN-FORM-->
+
+        <script>
+            var Loginform = document.getElementById("Loginform");
+            var regform = document.getElementById("regform");
+            var indicator = document.getElementById("indicator");
+
+            function register(){
+                regform.style.transform ="translateX(0px)";
+                Loginform.style.transform ="translateX(0px)";
+                indicator.style.transform ="translateX(100px)";
+            }
+
+            function login(){
+                regform.style.transform ="translateX(300px)";
+                Loginform.style.transform ="translateX(300px)";
+                indicator.style.transform ="translateX(0px)";
+            }
+
+        </script>
+        
+    </body>
+</html>
+
+

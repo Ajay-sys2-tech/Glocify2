@@ -1,0 +1,525 @@
+/*  --=================================GLOCIFY FRONT PAGE-==============================------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url(../shop.jpg);
+    height: 120vh;
+    background-size:cover ;
+    background-position: center;
+    
+}
+
+ul{
+    float:left;
+    list-style-type:none;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+ul li{
+    display:inline-block;
+}
+ul li a{
+    text-decoration:double;
+    color: #000 ;
+    padding: 3px 25px;                     
+    border: 3px solid #000;
+}
+
+ul li a:hover{
+    background-color: rgb(212, 13, 13);
+    color: white;
+    transition: 0.6s ease;
+}
+.logo img{
+    float: right;
+    
+    height: auto;
+    margin-top: 10px;
+    margin-right: 50px;
+    width: 200px;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+.title{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: rgb(239, 245, 237);
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    
+}
+
+/*-------============================== GLOCIFY INTRO 1 ===============------------------*/  
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 50px;
+    font-size: xx-large;
+}
+
+.col-2{ 
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    font-weight: bold;
+    color: rgb(240, 104, 104);
+}
+
+/*===========================================GLOCIFY INTRO 2 (SELL ON GLOCIFY)==============================*/
+
+.row-7{
+    display: flex ;
+    align-items:center ;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+   
+    font-size: xx-large;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+.col-7{ 
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+
+.col-7 img{
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+
+.col-7 h1{
+    font-size: 50px;
+    line-height: 40px;
+    margin: 25px 0 ;
+    color: rgb(134, 231, 7);
+
+}
+
+
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background: blue  ;
+}
+.head{
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+/*----===========================================Categories ka section hai ye==============================-------*/
+
+.categories{
+    margin: 70px 0;
+
+}
+
+.col-3{
+    flex-basis: 25%;
+    min-width: 100px;
+    margin-bottom: 30px;
+
+}
+.col-3 img{
+    width:100% ;
+}
+
+.small-container{
+    margin: auto;
+    max-width: 1080px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+
+}
+.title-position{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+
+
+}
+.title-position::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+.h4{
+    color: #555;
+    font-weight: normal;
+
+}
+.col-4 p{
+    font-size: 30px;
+
+}
+.rating .fa{
+    color: orangered;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+/*--------------------------------------- footer-------------------------*/
+
+
+.container-foot{
+    max-width: 1170px;
+    margin:auto;
+    background-color: rebeccapurple;
+    
+}
+.row-foot{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: black;
+    padding: 70px 0;
+    display: inline-block;
+    height: 60vh;
+}
+.footer-col{
+width: 15%;
+padding: 0 20px;
+margin-left: 20px;
+}
+
+.footer-col img{
+    width: 200%;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #bbbbbb;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content:'';
+    position:absolute;
+    left:50px;
+    bottom: -10px;
+    background-color: #000000;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbbbbb;
+     display: block;
+     text-decoration: none;
+     color: #bbbbbb;
+     display: block;
+}
+
+.row-foot-1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    background-color: #000;
+    
+
+    
+}
+.col-7 p2{
+color: #eff5f3;
+margin-bottom: 10px;
+margin-left: 2px;
+}
+
+
+ 
+
+/*  ===================Ye New Header  ka area hai======================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  
+  nav ul{
+    display:  inline-block;
+    list-style-type: none; 
+    
+  }
+  
+  nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: #555;
+  }
+  p{
+    color: #555;
+    font-size: larger;
+    
+  }
+  .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+
+
+  /* ====================== LOGIN PAGE KI STYLING KA SECTION =======================*/
+
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+  .form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.form-container span{
+      font-weight: bold;
+      padding: 0 10px;
+      color: black;
+      cursor: pointer;
+      width: 100px;
+      display: inline-block;
+      
+}
+  .form-btn{
+      display: inline-block;
+  }
+  .form-container form{
+      max-width: 300px;
+      padding: 0 20px;
+      position: absolute;
+      top: 120px;
+      transition: transform 0.5s;
+  }
+  form input{
+      width: 100%;
+      height: 30px;
+      margin: 8px;
+      padding: 0 10px;
+      border: 1px solid #ccc;
+  }
+  form .btn{
+      width: 100%;
+      border: none ;
+      cursor: pointer;
+      margin: 10px 0;
+  }
+  form .btn:focus{
+      outline: none;
+  }
+#Loginform{
+    left: -300px;
+
+}
+#regform{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+
+}
+#indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(120px); 
+    transition: transform 1s ;
+
+}
+
+.col-6{ 
+    flex-basis: 50%;
+    min-width: 100px;
+
+}
+
+.col-6 img{
+    max-width: 70%;
+    padding: 50px 50px;
+    margin-left: 20px;
+}
+
+.col-6 h1{
+    font-size: 30px;
+    line-height: 60px;
+    margin: 25px 0;
+
+}
+
+/*  ======= User Rating section ======*/
+
+
+  
+.body-rate {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    margin: 0 auto; /* Center website */
+    max-width: 800px; /* Max width */
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 15px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+      display: none;
+    }
+  }

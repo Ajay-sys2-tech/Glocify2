@@ -1,0 +1,112 @@
+
+<!--===========================//  Display All Products for vendor //===============================-->
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Glocify - Product Portfolio Display</title>
+        <link rel="stylesheet" href="/css/myShop.css">
+        <link rel="stylesheet" href="/css/index.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        
+
+    </head>
+
+    <!-----==========================//  HEADER SECTION HAI YE  //=====================-->
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="../images/frontend/Glocify1.png">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/"> <i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="/user/display">Shop</a></li>
+                        <li><a href="#">orders</a></li>
+                        <li><a href="#">Review</a></ li>
+                        <li><a href="#"><i class="fa fa-fw fa-user"></i>User</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </div>
+
+        <!--===========================//  Vendor portfolio  //====================-->
+
+        <div class="wrap cf">
+            <h1 class="projTitle">My Store<span></span> Table</h1>
+            <div class="heading cf">
+              <h15>My Product Cart</h15>
+              <div class="jem">
+                {{!-- <a href="#" class="continue">Add More Product</a> --}}
+              </div> 
+            </div>
+
+        {{#if products}}
+            <div class="project-shopcart">
+                <div class="myshop">
+                   {{#each products}} 
+                    <div class="box-1">
+                        {{!-- "../images/frontend/product1.jpg" --}}
+                        <img src={{this.item.image}} alt="Product_Pic">
+                        <div class="content-shop">
+                            <strong>{{this.item.name}}</strong>
+                            
+                            <h18>Price:{{this.item.price}}</h18>
+                            <h18>Sub-total:{{this.price}}</h18>
+                            <p15 class="shop-unit">Quantity: <span><strong>{{this.qty}}</strong></span>
+
+                            <p15 class="">
+                                <i class="fa fa-trash"></i>
+                                <a href="/cart/add-to-cart/{{this.item._id}}" class="remove-btn2">Add more</a>
+                            </p15>
+
+                            <p15 class="remove-btn">
+                                <i class="fa fa-trash"></i>
+                                <a href="/cart/remove/{{this.item._id}}" class="remove-btn2">Remove</a>
+                            </p15>
+
+                            <p17 class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                                <a href="/cart/reduce/{{this.item._id}}" class="remove-btn2">Reduce</a>
+                            </p17>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="heading cf">
+                <h15>End Of List</h15>                               
+            </div>
+
+             <div class="heading cf">
+                <h15>Total: {{totalPrice}}</h15>                               
+            </div>
+        {{else}}
+             <div class="heading cf">
+                <h15>No items in the cart</h15>                               
+            </div>
+        {{/if}}
+        
+            <div class="wrap cf"></div>
+        </div>
+        <div class="back-shop">
+            <a href="#"> Chehckout</a>
+        </div> 
+
+
+        <!---==================// FOOTER SECTION YAHA SE SURU HAI  //===============--->
+
+        {{>footer}}   
+    </body>
+</html>
+
+

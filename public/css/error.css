@@ -1,0 +1,49 @@
+.error-page{
+    padding: 30px 400px;
+    background: radial-gradient(#fff,#ffd6d6);
+
+}
+p14{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 15px 160px ;
+    padding: 15px 0;
+    /* color: rgb(228, 17, 52); */
+    font-weight: bold;
+    color: rgb(202, 115, 115);
+}
+
+.error-page img{
+    border-radius: 30px;
+    width: 560px;
+    height: 400px;
+}
+.ol{
+    float:left;
+    list-style-type:none;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+ol li{
+    border: lightblue;
+    display: inline-block;
+    padding: 15px 70px;
+}
+
+
+ol li a{
+    text-decoration:double;
+    background-color: rgb(87, 238, 167);
+    color: rgb(211, 48, 48) ;
+    padding: 3px 35px; 
+    border-radius: 5px;                    
+    border: 1px solid rgb(201, 238, 166);
+}
+
+ol li a:hover{
+    background-color: rgb(9, 194, 80);
+    color: white;
+    transition: 0.4s ease;
+}
+

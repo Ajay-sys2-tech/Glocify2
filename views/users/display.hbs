@@ -1,0 +1,224 @@
+<!--==============================Display All Products ===============================-->
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Glocify - All Products</title>
+        <link rel="icon" type="image/x-icon" href="/images/frontend/favicon.ico">
+        <link rel="stylesheet" href="/css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        
+
+    </head>
+
+    <!-----=================================HEADER SECTION HAI YE =====================-->
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="../images/frontend/Glocify1.png">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="/shops/register">Sell Online</a></li>
+                        <li><a href="/cart/myCart"><i class="fas fa-shopping-cart"> &nbsp; {{session.cart.totalQty}}</i></a></ li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </div>
+
+        <!--===========================================All Products Featured section====================-->
+
+        <div id="product-display" class="section-p1">
+            <h2>Summer Products</h2>
+            <p5>Trending collections</p5>
+
+            <button class="pre-btn"><img src="../images/frontend/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="../images/frontend/arrow.png" alt=""></button>
+            <div class="display-container">
+                {{#each products}}
+                <div class="pro">
+                    <img src={{this.image}} alt="Product image">
+                    <div class="description">
+                        <span>Nike</span>
+                        <h5>{{this.name}}</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h7>Rs {{this.price}}</h7>
+                    </div>
+                    <a href="/cart/add-to-cart/{{this._id}}"><i class="fal fa-shopping-cart cart"></i> </a>
+                </div>
+                {{/each}}
+                <!--===ADDING n PRODUCTS IN PRODUCT SECTION===== -->
+                <div class="pro">
+                    <img src="../images/frontend/product9.jpg" alt="">
+                    <div class="description">
+                        <span>Nike</span>
+                        <h5>Cotton T-shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h7>Rs 400</h7>
+                    </div>
+                    <a href="/cart/add-to-cart/:{{this._id}}"><i class="fal fa-shopping-cart cart"></i> </a>
+                </div>
+
+
+                <!--===ADDING n PRODUCTS IN PRODUCT SECTION===== -->
+                <div class="pro">
+                    <img src="../images/frontend/product9.jpg" alt="">
+                    <div class="description">
+                        <span>Nike</span>
+                        <h5>Cotton T-shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h7>Rs 400</h7>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i> </a>
+                </div>
+
+                <!--===ADDING n PRODUCTS IN PRODUCT SECTION===== -->
+                <div class="pro">
+                    <img src="../images/frontend/product9.jpg" alt="">
+                    <div class="description">
+                        <span>Nike</span>
+                        <h5>Cotton T-shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h7>Rs 400</h7>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i> </a>
+                </div>
+
+                <!--===ADDING n PRODUCTS IN PRODUCT SECTION===== -->
+                <div class="pro">
+                    <img src="../images/frontend/product9.jpg" alt="">
+                    <div class="description">
+                        <span>Nike</span>
+                        <h5>Cotton T-shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h7>Rs 400</h7>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i> </a>
+                </div>
+
+                <!--===ADDING n PRODUCTS IN PRODUCT SECTION===== -->
+                <div class="pro">
+                    <img src="../images/frontend/product9.jpg" alt="">
+                    <div class="description">
+                        <span>Nike</span>
+                        <h5>Cotton T-shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h7>Rs 400</h7>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i> </a>
+                </div>
+
+                <!--===ADDING n PRODUCTS IN PRODUCT SECTION===== -->
+                <div class="pro">
+                    <img src="../images/frontend/product9.jpg" alt="">
+                    <div class="description">
+                        <span>Nike</span>
+                        <h5>Cotton T-shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h7>Rs 400</h7>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i> </a>
+                </div>
+
+
+            </div>
+        </div>
+        
+
+        <!------------------------------------------------FOOTER SECTION YAHA SE SURU HAI----------------------->
+
+        {{>footer}}
+
+       
+
+        <!-------------------------------------JAVA SCRIPT SECTION YAHA LAST ME-->
+
+
+        <!-----------------------------------------JS SECTION FOR LOGIN-FORM-->
+
+        <script>
+            var Loginform = document.getElementById("Loginform");
+            var regform = document.getElementById("regform");
+            var indicator = document.getElementById("indicator");
+
+            function register(){
+                regform.style.transform ="translateX(0px)";
+                Loginform.style.transform ="translateX(0px)";
+                indicator.style.transform ="translateX(100px)";
+            }
+
+            function login(){
+                regform.style.transform ="translateX(300px)";
+                Loginform.style.transform ="translateX(300px)";
+                indicator.style.transform ="translateX(0px)";
+            }
+
+
+            const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimenstions = item.getBoundingClientRect();
+    let containerWidth = containerDimenstions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+
+        </script>
+        
+    </body>
+</html>
+
+

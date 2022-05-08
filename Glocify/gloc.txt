@@ -1,0 +1,24 @@
+Glocify Cover page:
+1. Footer:Add footer and info
+2. body:The picture portion
+3. Header: The menu portion.
+
+Login Vendor:
+Registration and login
+
+Login Customer:
+Registration and login
+
+Customer Page:
+1.Add to cart option
+2. Display of Shopping Items.
+3. Buy now
+
+Vendor page 
+1. Add item
+2. Delete Item.
+3. Price change.
+4. 
+
+Shopping Cart
+1. Add more(+ & -) items.

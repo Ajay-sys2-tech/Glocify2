@@ -1,0 +1,161 @@
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Glocify Login</title>
+        <link rel="icon" type="image/x-icon" href="/images/frontend/favicon.ico">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    </head>
+
+    <!-------------------------------------------HEADER SECTION HAI YE ----------->
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="../images/frontend/Glocify1.png">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Sell Online</a></li>
+                        <li><a href="#">Review</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>      
+
+        <!--------------------------------------------LOGIN PAGE SECTION  ------------------->
+
+        <div class="account-page"> 
+            <div class="container">
+                 <div class="row">
+                     <div class="col-6">
+                        <p> The best deals are just <br>one click away!!</p>
+                         <img src="../images/frontend/Login3.png">  
+                         
+                          
+                     </div>
+                   
+
+                     <div class="col-6">
+                         <div class="form-container-login">
+                             <div class="form-btn">
+                                 <span onclick="login()">Login</span>
+    
+                                </div>
+                             <!--------------------------------------LOGIN FORM-------------->
+                              <form id="regform" action="/shops/login" method="POST">
+                                <input type="email" placeholder="Email/Phone Number" name="email">
+                                <input type="password" placeholder=" Enter Password" name="password"> 
+                                <button type="Submit" class="btn">Login</button>
+                                <span class="psw"><a href="#">Forgot&nbsp;Password?</a></span>
+                                <span class="psw"><a href="#">Register&nbsp;Now</a></span>
+                              </form>
+                            </div>
+                     </div>
+                 </div>
+            </div> 
+        </div>
+
+        <!------------------------------------------------FOOTER SECTION YAHA SE SURU HAI----------------------->
+
+        <footer>
+            <div class="footer">
+                <div class="Container-foot">
+                    <div class="row-foot">
+                        <div class="footer-col">
+                            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Glocify</h4>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Affiliate program</a></li>
+                                </ul>
+                            
+                        </div>
+    
+                        <div class="footer-col">
+                            <h4>&nbsp;&nbsp;&nbsp;Get Help</h4>
+                            <ul>
+                                <li><a href="#">FAQ </a></li>
+                                <li><a href="#">Shipping </a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Payments</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-col">
+                            <h4>Online Shop</h4>
+                            <ul>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Dresses</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-col">
+                            <h4>&nbsp;&nbsp;&nbsp;Follow Us</h4>
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Chat bot</a></li>
+                            </ul>        
+                        </div>
+    
+                        <div class="footer-col">
+                            <img src="../images/frontend/Glocify1.png">         
+                        </div>
+                                   
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row-foot-1">
+                  <div class="col-7">
+                      <p2> Copyright© 2015 - 2022 www.glocify.com.– All Rights Reserved. Privacy Policy | Term of Service<br>----------</p2>
+                  </div>
+                </div>
+                
+            </div>
+        </footer> 
+
+        <!-------------------------------------JAVA SCRIPT SECTION YAHA LAST ME-->
+
+
+        <!-----------------------------------------JS SECTION FOR LOGIN-FORM-->
+
+        <script>
+            var Loginform = document.getElementById("Loginform");
+            var regform = document.getElementById("regform");
+            var indicator = document.getElementById("indicator");
+
+            function register(){
+                regform.style.transform ="translateX(0px)";
+                Loginform.style.transform ="translateX(0px)";
+                indicator.style.transform ="translateX(100px)";
+            }
+
+            function login(){
+                regform.style.transform ="translateX(300px)";
+                Loginform.style.transform ="translateX(300px)";
+                indicator.style.transform ="translateX(0px)";
+            }
+
+        </script>
+        
+    </body>
+</html>
+
+
+
+
+

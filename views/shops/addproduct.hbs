@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="/shops/addProduct" method="post" enctype="multipart/form-data">
+        Enter the name of the product: <input type="text" name="name"><br>
+        Enter price of the product:   <input type="text" name="price"> <br>
+        Enter descriptionn of the product: <input type="textfield" name="description"> <br>
+        Upload Picture of the product: <input type="file" name="productImage"> <br>
+        <input type="hidden" name="sellerID" value={{id}}>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
