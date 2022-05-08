@@ -74,7 +74,7 @@ router.post("/register", upload.single('catalog'), async(req, res) =>{
                 category: req.body.category,
                 ownerName: req.body.ownerName,
                 email: req.body.email,
-                // phone: req.body.phone,
+                phone: req.body.phone,
                 panCard: req.body.panCard,
                 password: req.body.password1
                 
@@ -85,11 +85,11 @@ router.post("/register", upload.single('catalog'), async(req, res) =>{
     
             
               const saved = await newShop.save();
-              if(saved)res.send("Shop registered succesfully!");
+              if(saved)res.render("thankyou", {message: " registered with us", nextPage: "login"});
     
         }  
     } catch (error) {
-        res.send(error);
+        res.send("something went wrong" + error);
     }
 })
 

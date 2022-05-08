@@ -120,6 +120,7 @@ router.post("/login", async (req, res) => {
 
         // console.log(curruser);
         if(chkpassword){
+            // res.render("thankyou", {message: "You are succesfully logged in", nextPage:"/user/display"});
             return res.redirect("display");
         }else{
             return res.status(400).send("Invalid  password");
