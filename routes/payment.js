@@ -23,7 +23,7 @@ var instance = new Razorpay({
       var options = {
         amount: req.body.amount,  // amount in the smallest currency unit
         currency: "INR",
-        receipt: "order_rcptid_11"
+        receipt: "order_rcptid_12"
       };
       instance.orders.create(options, function(err, order) {
         console.log(order);
@@ -35,6 +35,7 @@ var instance = new Razorpay({
 
 
   router.post("/api/payment/verify",(req,res)=>{
+    console.log("verifying")
 
     let body=req.body.response.razorpay_order_id + "|" + req.body.response.razorpay_payment_id;
    
